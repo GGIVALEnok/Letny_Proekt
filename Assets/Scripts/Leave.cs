@@ -6,7 +6,6 @@ public class Leave : MonoBehaviour
     public GameObject whatToLeave;
     public Transform LeavePoint;
 
-
     public void Interact()
     {
         whatToLeave = player.GetComponent<RayInteract>().WhatInArm3D;
@@ -14,5 +13,6 @@ public class Leave : MonoBehaviour
         player.GetComponent<RayInteract>().WhatInArm3D = null;
         GameObject.FindWithTag("grabUI").SetActive(false);
         GameObject.FindWithTag("grabUI").SetActive(false);
+        player.GetComponent<RayInteract>().Score += 1;
     }
 }

@@ -5,6 +5,7 @@ public class RayInteract : MonoBehaviour
     public float range = 10f;
     public GameObject InteractText;
     public GameObject WhatInArm3D;
+    public int Score;
 
     void Update()
     {
@@ -36,7 +37,7 @@ public class RayInteract : MonoBehaviour
                     hit.collider.GetComponent<Leave>().Interact();
                     InteractText.SetActive(false);
                 }
-    
+
             }
             else
             {
