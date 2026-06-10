@@ -39,7 +39,8 @@ public class WashPasuda : MonoBehaviour
                 dirt.color = dirtColor;
 
             }
-            else  if(dirtColor.a <= 0.7f && dirtColor.a >= 0)
+
+            else if (dirtColor.a <= 0.7f && dirtColor.a >= 0)
             {
                 dirtColor.a -= 0.1f;
                 dirt.color = dirtColor;
