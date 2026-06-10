@@ -6,6 +6,7 @@ public class RayInteract : MonoBehaviour
     public GameObject InteractText;
     public GameObject WhatInArm3D;
     public int Score;
+    public bool tarelka = false;
 
     void Update()
     {
@@ -17,7 +18,7 @@ public class RayInteract : MonoBehaviour
 
         if(Physics.Raycast(origin, direction, out hit, range))
         {
-            if(hit.collider.tag == "grabObject" && !WhatInArm3D)
+            if(hit.collider.tag == "grabObject" && !WhatInArm3D && !tarelka)
             {
                 //Debug.Log("Hit: " + hit.collider.name);
                 InteractText.SetActive(true);
@@ -28,7 +29,7 @@ public class RayInteract : MonoBehaviour
                 }
     
             }
-            else if(hit.collider.tag == "LeaveObject" && WhatInArm3D)
+            else if(hit.collider.tag == "LeaveObject" && WhatInArm3D && !tarelka)
             {
                 //Debug.Log("Hit: " + hit.collider.name);
                 InteractText.SetActive(true);
@@ -36,6 +37,30 @@ public class RayInteract : MonoBehaviour
                 {
                     hit.collider.GetComponent<Leave>().Interact();
                     InteractText.SetActive(false);
+                }
+
+            }
+            else if (hit.collider.tag == "tarelka" && !WhatInArm3D && !tarelka)
+            {
+                //Debug.Log("Hit: " + hit.collider.name);
+                InteractText.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    hit.collider.GetComponent<Grab>().Interact();
+                    InteractText.SetActive(false);
+                    tarelka = true; 
+                }
+
+            }
+            else if (hit.collider.tag == "LeaveTarelka" && WhatInArm3D && tarelka)
+            {
+                //Debug.Log("Hit: " + hit.collider.name);
+                InteractText.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    hit.collider.GetComponent<LeaveTarelka>().Interact_Wash();
+                    InteractText.SetActive(false);
+                    tarelka = false;
                 }
 
             }

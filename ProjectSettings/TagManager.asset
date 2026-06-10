@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - Key
+  - grabUI
+  - LeaveObject
+  - grabObject
+  - tarelka
+  - LeaveTarelka
   layers:
   - Default
   - TransparentFX

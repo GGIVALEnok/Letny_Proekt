@@ -8,7 +8,7 @@ public class Grab : MonoBehaviour
     public GameObject WhatInArmSprite;
     public GameObject WhatIAm;
     //public string WhatInArmTxt;
-    
+
     public void Interact()
     {
         //Door.SetBool("Key", true);
@@ -16,7 +16,6 @@ public class Grab : MonoBehaviour
         WhatInArmSprite.SetActive(true);
         player.GetComponent<RayInteract>().WhatInArm3D = WhatIAm;
         Destroy(gameObject);
+
     }
-
-
 }
