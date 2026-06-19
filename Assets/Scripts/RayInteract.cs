@@ -1,10 +1,15 @@
+using System.Collections;
 using UnityEngine;
 
 public class RayInteract : MonoBehaviour
 {
     public float range = 10f;
+    public float ochered = -1f;
     public GameObject InteractText;
     public GameObject WhatInArm3D;
+    public GameObject Odejda1;
+    public GameObject Odejda2;
+    public GameObject Tarelka;
     public int Score;
     public bool tarelka = false;
 
@@ -26,8 +31,16 @@ public class RayInteract : MonoBehaviour
                 {
                     hit.collider.GetComponent<Grab>().Interact();
                     InteractText.SetActive(false);
+                    Odejda1.SetActive(true);
+                    StartCoroutine(MOdejda1());
                 }
-    
+                /*else if (Input.GetKeyDown(KeyCode.F))
+                {
+                    hit.collider.GetComponent<Grab>().Interact();
+                    InteractText.SetActive(false);
+                    Odejda2.SetActive(true);
+                }
+                */
             }
             else if(hit.collider.tag == "LeaveObject" && WhatInArm3D && !tarelka)
             {
@@ -48,7 +61,9 @@ public class RayInteract : MonoBehaviour
                 {
                     hit.collider.GetComponent<Grab>().Interact();
                     InteractText.SetActive(false);
-                    tarelka = true; 
+                    tarelka = true;
+                    Tarelka.SetActive(true);
+                    StartCoroutine(MTarelka());
                 }
 
             }
@@ -76,4 +91,16 @@ public class RayInteract : MonoBehaviour
         }
         
     }
+
+    private IEnumerator MOdejda1()
+    {
+        yield return new WaitForSeconds(5f);
+        Odejda1.SetActive(false);
+    }
+    private IEnumerator MTarelka()
+    {
+        yield return new WaitForSeconds(5f);
+        Tarelka.SetActive(false);
+    }
+
 }
