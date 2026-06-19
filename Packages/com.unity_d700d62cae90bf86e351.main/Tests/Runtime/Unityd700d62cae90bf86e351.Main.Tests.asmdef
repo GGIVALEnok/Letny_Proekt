@@ -1,0 +1,11 @@
+{
+    "name": "Unityd700d62cae90bf86e351.Main.Tests",
+    "references": [
+        "Unityd700d62cae90bf86e351.Main"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

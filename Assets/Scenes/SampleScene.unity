@@ -20836,6 +20836,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: PC
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 01ffa55609811fe4e8b1580667b0fb9f, type: 3}
+      propertyPath: m_TagString
+      value: Comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189957736306546758, guid: 01ffa55609811fe4e8b1580667b0fb9f, type: 3}
+      propertyPath: m_TagString
+      value: Comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513616328032244669, guid: 01ffa55609811fe4e8b1580667b0fb9f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 106.35999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513616328032244669, guid: 01ffa55609811fe4e8b1580667b0fb9f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 106.35999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513616328032244669, guid: 01ffa55609811fe4e8b1580667b0fb9f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 106.35999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7583343868983580184, guid: 01ffa55609811fe4e8b1580667b0fb9f, type: 3}
+      propertyPath: m_TagString
+      value: Comp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64171,14 +64195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RayInteract
   range: 3
-  ochered: -1
   InteractText: {fileID: 69087530}
   WhatInArm3D: {fileID: 0}
-  Odejda1: {fileID: 1454593718}
-  Odejda2: {fileID: 1117539715}
-  Tarelka: {fileID: 402612151}
-  Score: 0
-  tarelka: 0
+  Computer: 
 --- !u!114 &1891765656
 MonoBehaviour:
   m_ObjectHideFlags: 0

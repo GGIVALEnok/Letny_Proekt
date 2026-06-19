@@ -1,0 +1,10 @@
+{
+    "name": "Unityd700d62cae90bf86e351.Main.Editor",
+    "references": [
+      "Unityd700d62cae90bf86e351.Main"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

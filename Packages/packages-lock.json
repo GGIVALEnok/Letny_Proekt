@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.qannixlllv.computer": {
+      "version": "file:C:/Users/root/Desktop/package",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.test-framework": "1.6.0"
+      }
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.12",
       "depth": 0,
@@ -209,6 +217,14 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.unity_d700d62cae90bf86e351.main": {
+      "version": "file:com.unity_d700d62cae90bf86e351.main",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.test-framework": "1.6.0"
+      }
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

@@ -22,7 +22,7 @@ public class LeaveTarelka : MonoBehaviour
         GameObject.FindWithTag("grabUI").SetActive(false);
         GameObject.FindWithTag("grabUI").SetActive(false);
         player.GetComponent<FirstPersonLook>().enabled = true;
-        player.GetComponent<RayInteract>().Score += 1;
+        //player.GetComponent<RayInteract>().Score += 1;
         GetComponent<Rigidbody>().freezeRotation = true;
 
     }

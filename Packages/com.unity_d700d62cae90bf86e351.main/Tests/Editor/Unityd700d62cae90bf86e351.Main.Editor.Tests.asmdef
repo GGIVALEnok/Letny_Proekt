@@ -1,0 +1,14 @@
+{
+    "name": "Unityd700d62cae90bf86e351.Main.Editor.Tests",
+    "references": [
+        "Unityd700d62cae90bf86e351.Main.Editor",
+        "Unityd700d62cae90bf86e351.Main"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
